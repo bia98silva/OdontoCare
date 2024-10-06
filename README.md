@@ -75,7 +75,9 @@ para desenvolvimento, testes e produção. Isso ajuda a evitar conflitos de
 dependências e configurações, garantindo que cada parte do sistema funcione
 conforme esperado em ambientes específicos.
 
-                Estrutura do Projeto
+                                                              Estrutura do Projeto
+
+                                                              
 Este sistema tem como objetivo gerenciar consultas odontológicas, facilitando o agendamento de pacientes, dentistas e histórico de consultas. Além disso, o sistema visa a prevenção de sinistros odontológicos, como erros de diagnóstico ou tratamentos inadequados, melhorando a segurança dos pacientes e a eficiência dos atendimentos.
 
 O projeto é organizado nas seguintes classes principais:
@@ -131,3 +133,16 @@ Link para a Proposta Tecnológica
 Vídeo de Apresentação: https://www.youtube.com/watch?v=Yg7mFEHHvv0 
 
 Neste vídeo, detalhamos a proposta tecnológica, explicamos o público-alvo e discutimos como nossa aplicação resolve os problemas de sinistros na odontologia.
+
+## **Diagrama de classes** 
+![Diagrama]([https://github.com/bia98silva/OdontoCare/blob/master/Imagens/DiagramaDeClasssesOdontoCare.drawio.png)
+
+## **Diagrama DER** 
+![der](https://github.com/bia98silva/OdontoCare/blob/master/Imagens/Diagrama_DER.png)
+
+
+## **Etapas do Desenvolvimento** 
+![Desenvolvimento](https://github.com/bia98silva/OdontoCare/blob/master/Imagens/OdontoCare.drawio.png)
+
+
+
