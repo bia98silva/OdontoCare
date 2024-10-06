@@ -135,7 +135,7 @@ Vídeo de Apresentação: https://www.youtube.com/watch?v=Yg7mFEHHvv0
 Neste vídeo, detalhamos a proposta tecnológica, explicamos o público-alvo e discutimos como nossa aplicação resolve os problemas de sinistros na odontologia.
 
 ## **Diagrama de classes** 
-![Diagrama]([https://github.com/bia98silva/OdontoCare/blob/master/Imagens/DiagramaDeClasssesOdontoCare.drawio.png)
+![Diagrama](https://github.com/bia98silva/OdontoCare/blob/master/Imagens/DiagramaDeClasssesOdontoCare.drawio.png)
 
 ## **Diagrama DER** 
 ![der](https://github.com/bia98silva/OdontoCare/blob/master/Imagens/Diagrama_DER.png)
