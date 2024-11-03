@@ -1,0 +1,572 @@
+{
+	"info": {
+		"_postman_id": "824cb3e5-d2bd-4059-b47b-4a7e25222e30",
+		"name": "OdontoCare API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38511883"
+	},
+	"item": [
+		{
+			"name": "criandoPacientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Beatriz\",\r\n    \"dataNascimento\": \"1998-09-13\",\r\n    \"cpf\": \"13326739852\",  \r\n    \"carteirinha\": 123456789,\r\n    \"telefone\": \"11959141505\",\r\n    \"email\": \"beatriz@example.com\",\r\n    \"endereco\": \"Rua das flores, 124\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObterTodososPacientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarPaciente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"João Silva\",\r\n    \"dataNascimento\": \"1990-01-01\",\r\n    \"cpf\": \"12345678901\",\r\n    \"carteirinha\": 123456,\r\n    \"telefone\": \"11987654321\",\r\n    \"email\": \"joao.silva@example.com\",\r\n    \"endereco\": \"Rua A, 123, Apto 45\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletarPaciente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CriarDentista",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idDentista\": 1,\r\n  \"nome\": \"Dr. Henrique Francisco\",\r\n  \"cro\": \"124563\",\r\n  \"especialidade\": \"Ortodontista\",\r\n  \"telefone\": \"123456789\",\r\n  \"email\": \"henrique.francisco@exemplo.com\",\r\n  \"consultasIds\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dentistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dentistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CriarDentista",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idDentista\": 1,\r\n  \"nome\": \"Dra. Regina Celia\",\r\n  \"cro\": \"58974\",\r\n  \"especialidade\": \"Clinica Geral\",\r\n  \"telefone\": \"145879632\",\r\n  \"email\": \"regina.celia@exemplo.com\",\r\n  \"consultasIds\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dentistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dentistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObterTodososDentistas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dentistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dentistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarDentista",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idDentista\": 1,\r\n  \"nome\": \"Dr. Henrique Francisco sierra\",\r\n  \"cro\": \"124563\",\r\n  \"especialidade\": \"Ortodontista\",\r\n  \"telefone\": \"123456789\",\r\n  \"email\": \"henrique.francisco@exemplo.com\",\r\n  \"consultasIds\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dentistas/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dentistas",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteDentista",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dentistas/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dentistas",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CriandoConsultas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataConsulta\": \"2024-10-10T15:30:00\",\r\n  \"status\": \"Agendada\",\r\n  \"detalhes\": \"Primeira consulta de avaliação.\",\r\n  \"pacienteId\": 3,\r\n  \"dentistaId\": 8\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/consultas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObterTodasasConsultas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/consultas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CriandoHistorico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"consultaId\": 5,\r\n    \"dataAtendimento\": \"2024-10-06T10:00:00\",\r\n    \"motivoConsulta\": \"Consulta de acompanhamento\",\r\n    \"observacoes\": \"Paciente apresenta melhoria significativa.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/historico-consultas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"historico-consultas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtendoTodososHistoricos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/historico-consultas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"historico-consultas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualiçãodoHistorico",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"consultaId\": 5,  \r\n    \"dataAtendimento\": \"2024-10-10T15:30:00\",  \r\n    \"motivoConsulta\": \"Primeira consulta de avaliação.\",  \r\n    \"observacoes\": \"Observações atualizadas, se necessário.\"  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/historico-consultas/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"historico-consultas",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteHistorico",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/historico-consultas/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"historico-consultas",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criarClinicas(sprint2)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Clinica OdontoCare\",\r\n    \"endereco\": \"Rua das flores, 123\",\r\n    \"telefone\": \"123456789\",\r\n    \"geolocalizacao\": {\r\n        \"latitude\": -23.550520,\r\n        \"longitude\": -46.633308\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clinicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AlteraçãoClinica(Sprint2)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Clinica OdontoCare\",\r\n    \"endereco\": \"Rua das flores, 125\",\r\n    \"telefone\": \"123456789\",\r\n    \"geolocalizacao\": {\r\n        \"latitude\": -23.550520,\r\n        \"longitude\": -46.633308\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clinicas/24\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas",
+						"24\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criarclinicas(sprint2)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"nome\": \"Clinica Smiles\",\r\n        \"endereco\": \"Av paulista, 147\",\r\n        \"telefone\": \"111111111\",\r\n        \"geolocalizacao\": {\r\n            \"latitude\": -23.550520,\r\n            \"longitude\": -46.633308\r\n        }\r\n    }\r\n  \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clinicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletedaClinica(sprint2)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clinicas/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TodasClinicas(Sprint2)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clinicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clinicas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
