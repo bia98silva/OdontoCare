@@ -147,6 +147,15 @@ As melhorias realizadas nesta sprint não apenas ampliaram a funcionalidade da A
 
 Além disso, a implementação de rotas distintas e a lógica para determinar clínicas próximas otimizam a experiência do usuário, permitindo que ele encontre rapidamente serviços de saúde disponíveis em sua área. Com o uso do HATEOAS, o usuário tem um acesso mais dinâmico aos recursos, promovendo uma navegação fluida entre as diferentes operações disponíveis na API.
 
+## **Endpoints Testados:**
+
+GET: Recuperação de todas as clínicas odontológicas e das clínicas próximas com base em um endereço.
+POST: Criação de novas clínicas odontológicas, incluindo a funcionalidade de criar em lote, permitindo a adição de múltiplas clínicas em uma única requisição.
+PUT: Atualização de informações de clínicas odontológicas existentes.
+DELETE: Remoção de clínicas odontológicas específicas.
+Testes de erro: Verificação de respostas adequadas para cenários de erro, como tentativas de acessar clínicas inexistentes ou falhas na validação dos dados.
+
+Os testes realizados estão documentados e disponíveis na seguinte pasta do repositório GitHub do projeto: Endpoints Postman - OdontoCare API
 
 Instruções para rodar a aplicação
 
