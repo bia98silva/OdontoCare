@@ -98,7 +98,7 @@ para desenvolvimento, testes e produção. Isso ajuda a evitar conflitos de
 dependências e configurações, garantindo que cada parte do sistema funcione
 conforme esperado em ambientes específicos.
 
-                                                              Estrutura do Projeto
+  ## **Estrutura do Projeto**
 
                                                               
 Este sistema tem como objetivo gerenciar consultas odontológicas, facilitando o agendamento de pacientes, dentistas e histórico de consultas. Além disso, o sistema visa a prevenção de sinistros odontológicos, como erros de diagnóstico ou tratamentos inadequados, melhorando a segurança dos pacientes e a eficiência dos atendimentos.
@@ -109,6 +109,43 @@ Paciente: Entidade responsável por armazenar os dados do paciente.
 Dentista: Entidade responsável pelo cadastro dos dentistas.
 Consulta: Responsável pelo agendamento e histórico de consultas.
 Histórico de Consultas: Armazena o histórico de todas as consultas realizadas.
+
+## **Relatório da Segunda Sprint do Projeto OdontoCare**
+
+Nesta segunda sprint do projeto OdontoCare, o foco foi aprimorar a API REST que gerencia informações sobre clínicas odontológicas. O objetivo principal foi implementar funcionalidades que garantissem um gerenciamento eficiente das clínicas, proporcionando uma interface intuitiva e segura para os usuários.
+
+Principais Implementações
+Durante esta sprint, foram adicionadas diversas funcionalidades ao ClinicaOdontologicaController, que agora inclui métodos para realizar operações CRUD (Criar, Ler, Atualizar e Deletar) em clínicas odontológicas. As melhorias implementadas foram:
+
+Busca de Clínicas Próximas:
+
+Implementação do método getClinicasProximas, que utiliza o serviço de geolocalização para encontrar clínicas próximas a um endereço específico. Esse recurso é crucial para a experiência do usuário, pois permite que ele localize clínicas de forma rápida e eficiente.
+Obtenção de Clínica por ID:
+
+Criação do método getClinica, que permite a recuperação de informações detalhadas sobre uma clínica específica. Isso é fundamental para operações que exigem o acesso a dados completos de uma clínica.
+Listagem de Todas as Clínicas:
+
+O método getAllClinicas foi implementado para retornar todas as clínicas cadastradas. Esta funcionalidade é importante para permitir que os usuários visualizem a lista completa de clínicas disponíveis.
+Criação de Nova Clínica:
+
+O método createClinica foi desenvolvido para permitir a adição de novas clínicas à base de dados. Ele aceita dados no formato de um ClinicaOdontologicaDTO, que ajuda a encapsular as informações necessárias e a garantir a segurança dos dados.
+Atualização de Clínica Existente:
+
+Implementação do método updateClinica, que possibilita a atualização das informações de clínicas existentes. Isso garante que os dados mantidos na base estejam sempre atualizados e relevantes.
+Remoção de Clínica:
+
+O método deleteClinica foi adicionado para permitir a exclusão de clínicas da base de dados, oferecendo uma funcionalidade essencial para o gerenciamento de informações.
+Criação em Lote:
+
+Foi implementado um método que permite a criação de múltiplas clínicas de uma só vez, facilitando a inclusão de grandes volumes de dados e melhorando a eficiência da API.
+Implementação de HATEOAS:
+
+Uma das adições mais significativas foi a implementação do HATEOAS (Hypermedia as the Engine of Application State). Cada resposta da API agora inclui links relevantes que permitem ao cliente navegar pelas diferentes operações disponíveis. Por exemplo, ao buscar informações sobre uma clínica, o retorno inclui links para visualizar todas as clínicas, obter dados sobre a clínica em questão e realizar atualizações ou deleções, proporcionando uma navegação mais intuitiva e conectada entre os recursos da API.
+Essa abordagem não apenas melhora a usabilidade da API, mas também a torna mais autoexplicativa, facilitando a vida dos desenvolvedores que a utilizam. O uso de HATEOAS é fundamental para criar APIs RESTful mais robustas e alinhadas com as melhores práticas do desenvolvimento de software.
+Benefícios das Implementações
+As melhorias realizadas nesta sprint não apenas ampliaram a funcionalidade da API, mas também tornaram a estrutura do código mais modular e fácil de manter. O uso de DTOs (Data Transfer Objects) para a troca de dados entre o cliente e o servidor contribuiu para a segurança e eficiência da aplicação, ao evitar a exposição direta da entidade.
+
+Além disso, a implementação de rotas distintas e a lógica para determinar clínicas próximas otimizam a experiência do usuário, permitindo que ele encontre rapidamente serviços de saúde disponíveis em sua área. Com o uso do HATEOAS, o usuário tem um acesso mais dinâmico aos recursos, promovendo uma navegação fluida entre as diferentes operações disponíveis na API.
 
 
 Instruções para rodar a aplicação
