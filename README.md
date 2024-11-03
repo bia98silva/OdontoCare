@@ -12,29 +12,31 @@ Nome: Pedro Henrique soares araujo - RM553801 ------> Responsavel peal analise d
 
 ## **Cronograma de Atividades**
 
-Data	Responsável	Atividade	Status
-08/out	Todos	definição de requisitos e alinhamento de funções e cronograma	
-10/out	Beatriz	Criação da API em Java com Spring Boot - Configuração inicial 
-12/out	Vitor	Estruturação do banco de dados Oracle e definição das tabelas iniciais	
-14/out	Pedro	Configuração do ambiente DevOps - configuração do Docker para CI/CD	
-16/out	Beatriz	Desenvolvimento do CRUD de Pacientes - entidade, DTOs e repositórios	
-18/out	Vitor	Criação das procedures e triggers no banco de dados Oracle	
-19/out	Beatriz	Desenvolvimento da tela de login no aplicativo Android	
-20/out	Pedro	Estruturação do plano de QA e casos de teste iniciais	
-22/out	Vitor	Desenvolvimento da integração de C# com banco de dados Oracle	
-24/out	Beatriz	Desenvolvimento da tela de funcionalidades principais no app mobile Android	
-25/out	Pedro	Criação de testes automatizados para a API e integração no pipeline DevOps	
-27/out	Beatriz	Desenvolvimento da tela de agendamentos no app Android	
-28/out	Vitor	Implementação de rotinas de segurança e backups no banco de dados	
-30/out	Pedro	Início do desenvolvimento do modelo de IA para análise de sinistros	
-01/nov	Beatriz	Finalização das telas de perfil e notificações no aplicativo Android	
-02/nov	Pedro	Testes de carga e segurança no ambiente QA	
-04/nov	Vitor	Ajustes finais no banco de dados e otimização de consultas	
-05/nov	Pedro	Implementação final e integração do modelo de IA na aplicação	
-06/nov	Beatriz	Revisão e testes do app Android e ajuste de bugs detectados	
+| Data        | Responsável | Atividade                                                                                      | Status        |
+|-------------|-------------|------------------------------------------------------------------------------------------------|---------------|
+| **08/10**   | Todos       | Definição de requisitos e alinhamento de funções e cronograma                                  | Concluído     |
+| **10/10**   | Beatriz     | Criação da API em Java com Spring Boot - Configuração inicial                                  | Concluído     |
+| **12/10**   | Vitor       | Estruturação do banco de dados Oracle e definição das tabelas iniciais                         | Concluído     |
+| **14/10**   | Pedro       | Configuração do ambiente DevOps - configuração do Docker para CI/CD                            | Concluído     |
+| **16/10**   | Beatriz     | Desenvolvimento do CRUD de Pacientes - entidade, DTOs e repositórios                           | Concluído     |
+| **18/10**   | Vitor       | Criação das procedures e triggers no banco de dados Oracle                                     | Concluído     |
+| **19/10**   | Beatriz     | Desenvolvimento da tela de login no aplicativo Android                                        | Concluído     |
+| **20/10**   | Pedro       | Estruturação do plano de QA e casos de teste iniciais                                         | Concluído     |
+| **22/10**   | Vitor       | Desenvolvimento da integração de C# com banco de dados Oracle                                 | Concluído     |
+| **24/10**   | Beatriz     | Desenvolvimento da tela de funcionalidades principais no app mobile Android                   | Concluído     |
+| **25/10**   | Pedro       | Criação de testes automatizados para a API e integração no pipeline DevOps                    | Concluído     |
+| **27/10**   | Beatriz     | Desenvolvimento da tela de agendamentos no app Android                                        | Concluído     |
+| **28/10**   | Vitor       | Implementação de rotinas de segurança e backups no banco de dados                             | Concluído     |
+| **30/10**   | Pedro       | Início do desenvolvimento do modelo de IA para análise de sinistros                           | Em Andamento  |
+| **01/11**   | Beatriz     | Finalização das telas de perfil e notificações no aplicativo Android                          | Concluído     |
+| **02/11**   | Pedro       | Testes de carga e segurança no ambiente QA                                                    | Concluído     |
+| **04/11**   | Vitor       | Ajustes finais no banco de dados e otimização de consultas                                    | Concluído     |
+| **05/11**   | Pedro       | Implementação final e integração do modelo de IA na aplicação                                 | Concluído     |
+| **06/11**   | Beatriz     | Revisão e testes do app Android e ajuste de bugs detectados                                   | Em Andamento  |
 
 
 
+## **Explicação do Projeto**
 
 Sinistros na odontologia podem referir-se a eventos adversos, como erros de
 diagnóstico, tratamentos inadequados ou complicações que resultam em danos
