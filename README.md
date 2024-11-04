@@ -7,8 +7,8 @@
 
 
 Nome: Beatriz Silva RM552600 --->  Responsável pelo desenvolvimento da API em Java Spring Boot e integração com o banco de dados Oracle.Também responsavel pela parte de mobile. 
-Nome: Vitor RM553241  -----> Criação do banco de dados e pela criação em C#
-Nome: Pedro Henrique soares araujo - RM553801 ------> Responsavel peal analise dos sinistros usando IA e pela parte de testes e Devops. 
+Nome: Vitor Onofre Ramos RM553241  -----> Criação do banco de dados e pela criação em C#
+Nome: Pedro Henrique soares araujo - RM553801 ------> Responsavel pela analise dos sinistros usando IA e pela parte de testes e Devops. 
 
 ## **Cronograma de Atividades**
 
