@@ -24,7 +24,7 @@ public class ConsultaService {
     private PacienteRepository pacienteRepository;
 
     @Autowired
-    private DentistaRepository dentistaRepository; // Injeção do repositório de Dentista
+    private DentistaRepository dentistaRepository;
 
     public List<Consulta> findAll() {
         return consultaRepository.findAll();
