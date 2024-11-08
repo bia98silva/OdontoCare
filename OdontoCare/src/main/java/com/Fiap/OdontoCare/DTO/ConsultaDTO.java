@@ -1,12 +1,14 @@
 package com.Fiap.OdontoCare.DTO;
 
+import com.Fiap.OdontoCare.Entity.Paciente;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
+import org.springframework.hateoas.RepresentationModel;
 
 import java.time.LocalDateTime;
 
 @Data
-public class ConsultaDTO {
+public class ConsultaDTO extends RepresentationModel<ConsultaDTO> {
 
     private Long idConsulta;
 
@@ -23,4 +25,6 @@ public class ConsultaDTO {
 
     @NotNull(message = "O ID do dentista é obrigatório")
     private Long dentistaId;
+
+
 }
