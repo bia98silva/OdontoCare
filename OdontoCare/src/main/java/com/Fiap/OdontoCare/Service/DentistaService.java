@@ -26,13 +26,12 @@ public class DentistaService {
 
     public Dentista save(DentistaDTO dentistaDTO) {
         Dentista dentista = new Dentista();
-        dentista.setIdDentista(dentistaDTO.getIdDentista()); // Definindo o ID do dentista se necessário
+        dentista.setIdDentista(dentistaDTO.getIdDentista()); 
         dentista.setNome(dentistaDTO.getNome());
-        dentista.setCro(dentistaDTO.getCro()); // Inclua o mapeamento do CRO
+        dentista.setCro(dentistaDTO.getCro()); 
         dentista.setEspecialidade(dentistaDTO.getEspecialidade());
         dentista.setTelefone(dentistaDTO.getTelefone());
         dentista.setEmail(dentistaDTO.getEmail());
-        // Se você tiver um relacionamento com consultas, você também deve mapeá-lo aqui
         return dentistaRepository.save(dentista);
     }
 
@@ -40,7 +39,7 @@ public class DentistaService {
         Dentista dentista = dentistaRepository.findById(dentistaDTO.getIdDentista())
                 .orElseThrow(() -> new ResourceNotFoundException("Dentista não encontrado com ID: " + dentistaDTO.getIdDentista()));
         dentista.setNome(dentistaDTO.getNome());
-        dentista.setCro(dentistaDTO.getCro()); // Inclua o mapeamento do CRO
+        dentista.setCro(dentistaDTO.getCro()); 
         dentista.setEspecialidade(dentistaDTO.getEspecialidade());
         dentista.setTelefone(dentistaDTO.getTelefone());
         dentista.setEmail(dentistaDTO.getEmail());
