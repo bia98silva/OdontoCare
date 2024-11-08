@@ -30,9 +30,9 @@ public class GeolocalizacaoService {
                 return Optional.of(new GeolocalizacaoDTO(latitude, longitude));
             }
         } catch (Exception e) {
-            e.printStackTrace(); // Trate a exceção de acordo com sua estratégia de erro
+            e.printStackTrace(); 
         }
 
-        return Optional.empty(); // Retorna vazio se não encontrar coordenadas
+        return Optional.empty(); 
     }
 }
